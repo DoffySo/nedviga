@@ -1,0 +1,507 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.container {
+  height: 840px;
+  min-height: 50vh;
+  max-height: 840px;
+  background: rgb(255, 119, 119);
+  align-items: center;
+}
+.container--holder {
+  height: 100%;
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: center;
+}
+.container--holder .t {
+  color: white;
+}
+.container--holder .t .head, .container--holder .t .body {
+  margin-bottom: 10px;
+}
+.container--holder .t .body span {
+  color: #ECB42E;
+}
+.container--holder .t .foot h4 {
+  margin-bottom: 10px;
+}
+.container--holder .t .foot button {
+  background: #ECB42E;
+  border: 1px solid #ECB42E;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 300ms ease;
+}
+.container--holder .t .foot button:hover {
+  background: #f5c149;
+  border: 1px solid #f5c149;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.buy {
+  margin: 80px 0;
+  width: 100%;
+}
+.buy .container {
+  background: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100px;
+  max-height: 300px;
+}
+.buy .container .head {
+  display: flex;
+}
+.buy .container .head div.selected {
+  background: #383965;
+}
+.buy .container .head label {
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+}
+.buy .container .head .buyDiv {
+  width: 90px;
+  height: 40px;
+  background: #595B9D;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 0 0 0;
+  display: flex;
+  cursor: pointer;
+}
+.buy .container .head .buyDiv input {
+  display: none;
+}
+.buy .container .head .rentDiv {
+  width: 90px;
+  height: 40px;
+  background: #595B9D;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 4px 0 0;
+  display: flex;
+  cursor: pointer;
+}
+.buy .container .head .rentDiv input {
+  display: none;
+}
+.buy .container .bottom {
+  min-width: 200px;
+  width: 60;
+  height: 100px;
+}
+.buy .container .bottom .fromBuyDiv {
+  background: #383965;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  display: flex;
+  color: white;
+  border-radius: 0 4px 4px 4px;
+}
+.buy .container .bottom .fromBuyDiv .complex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.buy .container .bottom .fromBuyDiv .kvartira {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.buy .container .bottom .fromBuyDiv .kvartira .selection {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  width: 250px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  text-align: start;
+  font-size: 14px;
+}
+.buy .container .bottom .fromBuyDiv .kvartira .selection div {
+  width: 50%;
+  margin-bottom: 5px;
+}
+.buy .container .bottom .fromBuyDiv .kvartira .selection input[type=checkbox] {
+  position: relative;
+  margin-right: 5px;
+}
+.buy .container .bottom .fromBuyDiv .kvartira .selection input[type=checkbox]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  background-color: #C7C7C7;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+}
+.buy .container .bottom .fromBuyDiv .kvartira .selection input[type=checkbox]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1E80EF;
+}
+.buy .container .bottom .fromBuyDiv .search button {
+  background: #ECB42E;
+  border: 1px solid #ECB42E;
+  padding: 6px 12px;
+  font-weight: 500;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.info {
+  width: 100%;
+  background: #383965;
+  z-index: 20;
+}
+.info-container {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  height: 800px;
+  max-height: 800px;
+  justify-content: space-evenly;
+}
+.info-container .text {
+  max-width: 600px;
+  margin-left: 10%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: start;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+  font-size: 21px;
+}
+.info-container .text h1 {
+  width: 100%;
+  font-size: 64px;
+}
+.info-container .image {
+  width: 50%;
+  max-width: 600px;
+  position: relative;
+  height: 800px;
+}
+
+.infotwo {
+  width: 100%;
+  height: 800px;
+  max-height: 800px;
+  z-index: 20;
+}
+.infotwo-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.infotwo-container .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+.infotwo-container .left-investors, .infotwo-container .left-life {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.infotwo-container .left-investors h1, .infotwo-container .left-life h1 {
+  margin-bottom: 20px;
+  color: #317AB5;
+}
+.infotwo-container .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.infotwo-container .right .rent {
+  width: 210px;
+  height: 130px;
+  background: #3C3D6D;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 30%;
+  top: 25%;
+}
+.infotwo-container .right .rent::before {
+  content: "до 15%";
+  font-weight: bolder;
+  color: #fff;
+  font-size: 64px;
+  display: flex;
+  width: 110%;
+  flex-wrap: nowrap;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 15%;
+  line-height: 49px;
+}
+.infotwo-container .right .rent::after {
+  content: "арендный бизнес";
+  color: #EBB40E;
+  font-size: 21px;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  text-align: right;
+}
+.infotwo-container .right .investition {
+  width: 210px;
+  height: 130px;
+  background: #EBB40E;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 70%;
+  top: 40%;
+}
+.infotwo-container .right .investition::before {
+  content: "до 40%";
+  font-weight: bolder;
+  color: #fff;
+  font-size: 64px;
+  display: flex;
+  width: 110%;
+  flex-wrap: nowrap;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 15%;
+  line-height: 49px;
+}
+.infotwo-container .right .investition::after {
+  content: "инвестиции в строительство";
+  color: #3C3D6D;
+  font-size: 21px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  width: 100%;
+  text-align: left;
+}
+.infotwo-container .right .text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 210px;
+  left: 70%;
+  top: 25%;
+  color: #3C3D6D;
+  font-size: 21px;
+  display: flex;
+}
+.infotwo-container .right .text span {
+  width: 50%;
+}
+
+.whywe {
+  width: 100%;
+}
+.whywe-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 1200px;
+  flex-direction: column;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 800px;
+}
+.whywe-container h1 {
+  color: #317AB5;
+  justify-self: start;
+}
+.whywe-container .items {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.whywe-container .items .item {
+  width: calc(33.3333333333% - 80px);
+  text-align: center;
+  margin: 20px 40px;
+}
+.whywe-container .items .item .body {
+  color: #1B2A78;
+  font-size: 24px;
+  font-weight: bolder;
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+}
+.whywe-container .items .item .foot {
+  font-weight: 400;
+  color: #595B9D;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+}
+.form-container {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.form-container form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.form-container form div {
+  display: flex;
+  margin: 20px 0;
+}
+.form-container form div label {
+  margin-left: 30px;
+  color: #383965;
+  text-align: start;
+}
+.form-container form div label:hover {
+  cursor: pointer;
+}
+.form-container form input {
+  height: 40px;
+  align-items: center;
+  display: flex;
+  background: #F5F5F5;
+  border: 1px solid rgba(119, 119, 119, 0.2);
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.form-container form input[name=text] {
+  height: 150px;
+  display: flex;
+  align-items: start;
+  text-align: start;
+  justify-content: start;
+}
+.form-container form input[name=text]::-moz-placeholder {
+  align-self: flex-start;
+  text-align: start;
+  justify-self: start;
+}
+.form-container form input[name=text]::placeholder {
+  align-self: flex-start;
+  text-align: start;
+  justify-self: start;
+}
+.form-container form input[type=checkbox] {
+  position: relative;
+}
+.form-container form input[type=checkbox]:hover {
+  cursor: pointer;
+}
+.form-container form input[type=checkbox]::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  border: 1px solid #ABA9A4;
+  background: #fff;
+  position: absolute;
+}
+.form-container form input[type=checkbox]:checked::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  border: 1px solid #ABA9A4;
+  background: #1B2A78;
+  position: absolute;
+}
+.form-container form input[type=checkbox]:checked::after {
+  content: "+";
+  color: white;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  font-size: 21px;
+  text-align: center;
+  align-items: center;
+  left: 1px;
+  top: 6px;
+}
+.form-container form button {
+  background: #ECB42E;
+  border: 1px solid #ECB42E;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 21px;
+  border-radius: 4px;
+  transition: 300ms ease;
+}
+.form-container form button:hover {
+  background: #f5c149;
+  border: 1px solid #f5c149;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+.form-container .image {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+.form-container .image img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */

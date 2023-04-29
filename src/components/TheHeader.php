@@ -11,7 +11,10 @@ $header = "FortNoks Club";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="src/styles/media.css">
+    <link rel="stylesheet" href="src/styles/default.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
     <title><?= $header ?></title>
 </head>
@@ -57,9 +60,6 @@ $header = "FortNoks Club";
                             <option value="ua">ua</option>
                         </select>
                     </div>
-                </div>
-                <div class="bottom">
-                    
                 </div>
             </div>
 </header>

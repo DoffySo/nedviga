@@ -1,0 +1,102 @@
+@media screen and (max-width: 1200px) {
+    .info {
+        &-container {
+            justify-content: space-between;
+            .text {
+                margin-left: 0;
+                width: 50%;
+                display: flex;
+                h1 {
+                    width: 100%;
+                }
+                span {
+                    text-align: start;
+                    margin: 20px 0;
+                    font-size: 16px;
+                }
+            }
+            .image {
+                width: 40%;
+            }
+        }
+    }
+    .infotwo {
+        &-container {
+            .left {
+                width: 100%;
+                &-investors, &-life {
+                    width: 50%;
+                    display: flex;
+                    margin: 0 auto;  
+
+                    span {
+                        font-size: 21px;
+                    }
+                }
+            }
+            .right {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        background: green;
+
+        &--container {
+            .top {
+                .phoneMenu {
+                    display: none;
+                }
+                .end {
+                    .links {
+                        .link {
+                            font-size: 12px;
+                        }
+                    }
+                    .phone {
+                        font-size: 14px;
+                        width: 120px;
+                        margin-left: 0;
+                    }
+                    .lang {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .header {
+        background: blue;
+
+        &--container {
+            .top {
+                .phoneMenu {
+                    display: flex;
+                }
+                .end {
+                    .links {
+                        display: none;
+                    }
+                    .phone {
+                        display: none;
+                    }
+                    .lang {
+                        display: none;
+                    }
+                    .burger-menu {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@media screen and (max-width: 1200px) {
+  .info-container {
+    justify-content: space-between;
+  }
+  .info-container .text {
+    margin-left: 0;
+    width: 50%;
+    display: flex;
+  }
+  .info-container .text h1 {
+    width: 100%;
+  }
+  .info-container .text span {
+    text-align: start;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  .info-container .image {
+    width: 40%;
+  }
+  .infotwo-container .left {
+    width: 100%;
+  }
+  .infotwo-container .left-investors, .infotwo-container .left-life {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .infotwo-container .left-investors span, .infotwo-container .left-life span {
+    font-size: 21px;
+  }
+  .infotwo-container .right {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    background: green;
+  }
+  .header--container .top .phoneMenu {
+    display: none;
+  }
+  .header--container .top .end .links .link {
+    font-size: 12px;
+  }
+  .header--container .top .end .phone {
+    font-size: 14px;
+    width: 120px;
+    margin-left: 0;
+  }
+  .header--container .top .end .lang {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .header {
+    background: blue;
+  }
+  .header--container .top .phoneMenu {
+    display: flex;
+  }
+  .header--container .top .end .links {
+    display: none;
+  }
+  .header--container .top .end .phone {
+    display: none;
+  }
+  .header--container .top .end .lang {
+    display: none;
+  }
+  .header--container .top .end .burger-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,121 @@
+.header {
+  width: 100%;
+  height: 60px;
+  transition: all 300ms ease;
+  position: absolute;
+  z-index: 12856719;
+}
+.header--container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header--container .top {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.header--container .top .phoneMenu {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: white;
+  color: black;
+  transform: translate(-50%, -50%);
+  left: 1000%;
+  top: 350%;
+  transition: 500ms ease;
+  display: none;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.header--container .top .phoneMenu ul li {
+  font-weight: 600;
+  margin: 12px 0;
+}
+.header--container .top .phoneMenu small {
+  margin: 12px 0;
+}
+.header--container .top .phoneMenu select {
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0;
+  border: 1px solid black;
+  padding: 6px;
+}
+.header--container .top .phoneMenu select option {
+  color: black;
+}
+.header--container .top .phoneMenu.active {
+  left: 50%;
+}
+.header--container .top .start .logo {
+  height: 100%;
+  width: 80px;
+  display: flex;
+}
+.header--container .top .start .logo svg {
+  display: flex;
+}
+.header--container .top .end {
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  position: relative;
+}
+.header--container .top .end .links {
+  display: flex;
+}
+.header--container .top .end .links .link {
+  margin: 0 10px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 16px;
+}
+.header--container .top .end .links .link:hover {
+  cursor: pointer;
+  color: #aaa;
+}
+.header--container .top .end .phone {
+  background: transparent;
+  border: 0;
+  color: white;
+  cursor: text;
+  display: flex;
+  font-size: 16px;
+  margin-left: 12px;
+  width: 200px;
+  text-align: center;
+}
+.header--container .top .end .lang {
+  background: transparent;
+  border: 0;
+  font-weight: 600;
+  color: white;
+  margin-right: 10px;
+}
+.header--container .top .end .lang option {
+  color: black;
+  background: transparent;
+}
+.header--container .top .end .burger-menu {
+  height: 100%;
+  width: 60px;
+  font-size: 24px;
+  background: transparent;
+  color: white;
+  border: 0;
+  padding: 6px;
+  border-radius: 999px;
+  display: none;
+  position: relative;
+}
+.header--container .top .end .burger-menu:hover {
+  cursor: pointer;
+  background: rgba(170, 170, 170, 0.3137254902);
+}/*# sourceMappingURL=header.css.map */

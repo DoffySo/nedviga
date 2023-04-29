@@ -17,6 +17,7 @@
         </div>
     </div>
 </div>
+
 <section class="buy">
     <div class="container">
         <div class="head">
@@ -63,4 +64,107 @@
         </div>
     </div>
 </section>
+
+<div class="info">
+    <div class="info-container">
+        <div class="text">
+            <h1 class="title">
+                FORT NOKS
+            </h1>
+            <span>
+                - крупнейший застройщик на черноморском побережье и управляющая компания Болгарии.
+            </span>
+            <span>
+                Наши апартаменты находятся на берегу моря. Курорты Елените, Святой Влас, Солнечный берег, Равда – идеальные места для летнего отдыха. Рядом старинный город Несебр, 35-40 км до аэропорта Бургас, 80-90 км да аэропорта Варна; аквапарки Солнечного Берега, Елените, Равды, Несебара – в нескольких минутах езды. По мнению пользователей сайтов tripadvisor и booking, жилые комплексы Форт Нокс – лучшие на побережье Болгарии, с самыми высокими оценками и отличными отзывами гостей.
+            </span>
+            <span>
+                Мы предлагаем рассрочку на год без удорожания (первый взнос от 10 %).
+            </span>
+        </div>
+        <div class="image">
+            <img src="src/images/info.png" height="800px" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="infotwo">
+    <div class="infotwo-container">
+        <div class="left">
+            <div class="left-investors">
+                <h1>Инвесторам</h1>
+                <span>
+                Мы предлагаем проверенные стратегии инвестирования в зарубежную недвижимость. Стратегию подбираем под бюджет, уровень риска и уровень доходности
+                </span>
+            </div>
+            <div class="left-life">
+                <h1>
+                    Для жизни и отдыха
+                </h1>
+                <span>
+                    Мы предлагаем проверенные стратегии инвестирования в зарубежную недвижимость. Стратегию подбираем под бюджет, уровень риска и уровень доходности
+                </span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="rent"></div>
+            <div class="text">
+                <span>Годовой доход</span>
+            </div>
+            <div class="investition"></div>
+        </div>
+    </div>
+</div>
+
+<div class="whywe">
+    <div class="whywe-container">
+        <h1>Почему мы?</h1>
+        <div class="items">
+        <div class="item">
+                <div class="head"></div>
+                <div class="body">Беспроцентная рассрочка</div>
+                <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
+            </div>
+        <div class="item">
+            <div class="head"></div>
+            <div class="body">Беспроцентная рассрочка</div>
+            <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
+        </div>
+        <div class="item">
+            <div class="head"></div>
+            <div class="body">Беспроцентная рассрочка</div>
+            <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
+        </div>
+        <div class="item">
+            <div class="head"></div>
+            <div class="body">Беспроцентная рассрочка</div>
+            <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
+        </div>
+        <div class="item">
+            <div class="head"></div>
+            <div class="body">Беспроцентная рассрочка</div>
+            <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="form">
+    <div class="form-container">
+        <form action="">
+            <input type="text"  placeholder="Имя *" name="name">
+            <input type="tel"   placeholder="Телефон *" name="phone">
+            <input type="email" placeholder="Почта *" name="email">
+            <input type="text"  placeholder="Сообщение" name="text">
+            <div>
+                <input type="checkbox" name="licence" id="licence">
+                <label for="licence">Я даю согласие на обработку персональных данных в соответствии с Политикой Конфиденциальности</label>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="image">
+            <img src="src/images/form.png" alt="">
+        </div>
+    </div>
+</div>
+
 <?php include './src/components/TheFooter.php'; ?>

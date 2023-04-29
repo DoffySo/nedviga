@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.container {
+    height: 840px;
+    min-height: 50vh;
+    max-height: 840px;
+    background: rgb(255, 119, 119);
+    align-items: center;
+    &--holder {
+        height: 100%;
+        width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        max-width: 1200px;
+        align-items: center;
+
+        .t {
+            color: white;
+            .head, .body {
+                margin-bottom: 10px;
+            }
+            .body {
+                span {
+                    color: #ECB42E;
+                }
+            }
+            .foot {
+                h4 {
+                    margin-bottom: 10px;
+                }
+                button {
+                    background: #ECB42E;
+                    border: 1px solid #ECB42E;
+                    color: white;
+                    padding: 12px 20px;
+                    border-radius: 6px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    transition: 300ms ease;
+
+                    &:hover {
+                        background: #f5c149;
+                        border: 1px solid #f5c149;
+                        cursor: pointer;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.buy {
+    margin: 80px 0;
+    width: 100%;
+    .container {
+        background: none;
+        max-width: 1200px;
+        margin: 0 auto;
+        min-height: 100px;
+        max-height: 300px;
+        .head {
+            div.selected {
+                background: #383965;
+            }
+            display: flex;
+            label {
+                text-transform: uppercase;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .buyDiv {
+                width: 90px;
+                height: 40px;
+                background: #595B9D;
+                color: white;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px 0 0 0;
+                display: flex;
+                cursor: pointer;
+                input {
+                   display: none;
+                }
+            }
+            .rentDiv {
+                width: 90px;
+                height: 40px;
+                background: #595B9D;
+                color: white;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0 4px 0 0;
+                display: flex;
+                cursor: pointer;
+                input {
+                  display: none;
+                }
+            }
+        }
+        .bottom {
+            min-width: 200px;
+            width: 60;
+            height: 100px;
+            .fromBuyDiv {
+                background: #383965;
+                height: 100%;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px;
+                display: flex;
+                color: white;
+                border-radius: 0 4px 4px 4px;
+                .complex {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 100%;
+                }
+                .kvartira {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 100%;
+                    .selection {
+                        display: flex;
+                        flex-direction: row;
+                        text-align: center;
+                        align-items: center;
+                        width: 250px;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: start;
+                        text-align: start;
+                        font-size: 14px;
+
+                        div {
+                            width: 50%;
+                            margin-bottom: 5px;
+                        }
+
+                        input[type="checkbox"] {
+                            position: relative;
+                            margin-right: 5px;
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                top: 50%;
+                                left: 50%;
+                                background-color:#C7C7C7;
+                                border-radius: 3px;
+                                transform: translate(-50%, -50%);
+                            }
+                            &:checked:before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                background-color:#1E80EF;
+                            }
+                        }
+                    }
+                }
+                .search {
+                    button {
+                        background: #ECB42E;
+                        border: 1px solid #ECB42E;
+                        padding: 6px 12px;
+                        font-weight: 500;
+                        color: white;
+                        font-size: 16px;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.info {
+    width: 100%;
+    background: #383965;
+    z-index: 20;
+    &-container {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        height: 800px;
+        max-height: 800px;
+        justify-content: space-evenly;
+
+        .text {
+            max-width: 600px;
+            margin-left: 10%;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            text-align: start;
+            justify-content: space-evenly;
+            width: 50%;
+            height: 100%;
+            font-size: 21px;
+            h1 {
+                width: 100%;
+                font-size: 64px;
+            }
+        }
+        .image {
+            width: 50%;
+            max-width: 600px;
+            position: relative;
+            height: 800px;
+        }
+    }
+}
+
+.infotwo {
+    width: 100%;
+    height: 800px;
+    max-height: 800px;
+    z-index: 20;
+
+    &-container {
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+
+        .left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+            &-investors, &-life {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    margin-bottom: 20px;
+                    color: #317AB5;
+                }
+            }
+        }
+        .right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            position: relative;
+            align-items: center;
+            .rent {
+                width: 210px;
+                height: 130px;
+                background: #3C3D6D;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 30%;
+                top: 25%;
+                &::before {
+                    content: 'до 15%';
+                    font-weight:bolder;
+                    color: #fff;
+                    font-size: 64px;
+                    display: flex;
+                    width: 110%;
+                    flex-wrap: nowrap;
+                    position: absolute;
+                    text-align: center;
+                    justify-content: center;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 15%;
+                    line-height: 49px;
+                }
+                &::after {
+                    content: 'арендный бизнес';
+                    color: #EBB40E;
+                    font-size: 21px;
+                    position: absolute;
+                    bottom: 0;
+                    width: 50%;
+                    text-align: right;
+                }
+            }
+            .investition {
+                width: 210px;
+                height: 130px;
+                background: #EBB40E;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 70%;
+                top: 40%;
+                &::before {
+                    content: 'до 40%';
+                    font-weight:bolder;
+                    color: #fff;
+                    font-size: 64px;
+                    display: flex;
+                    width: 110%;
+                    flex-wrap: nowrap;
+                    position: absolute;
+                    text-align: center;
+                    justify-content: center;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 15%;
+                    line-height: 49px;
+                }
+                &::after {
+                    content: 'инвестиции в строительство';
+                    color: #3C3D6D;
+                    font-size: 21px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    right: 0;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+            .text {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                width: 210px;
+                left: 70%;
+                top: 25%;
+                color: #3C3D6D;
+                font-size: 21px;
+                display: flex;
+
+                span {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.whywe {
+    width: 100%;
+    &-container {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 1200px;
+        flex-direction: column;
+        height: max-content;
+        max-height: 800px;
+        h1 {
+            color: #317AB5;
+            justify-self: start;
+        }
+        .items {
+            margin-top: 50px;
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            .item {
+                width: calc(100% / 3 - 80px);
+                text-align: center;
+                margin: 20px 40px;
+
+                .body {
+                    color: #1B2A78;
+                    font-size: 24px;
+                    font-weight: bolder;
+                    display: flex;
+                    margin: 0 auto;
+                    width: 50%;
+                }
+                .foot {
+                    font-weight: 400;
+                    color: #595B9D;
+                }
+            }
+        }
+    }
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    &-container {
+        width: 1200px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        form {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                margin: 20px 0;
+                label {
+                    margin-left: 30px;
+                    color: #383965;
+                    text-align: start;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            input {
+                height: 40px;
+                align-items: center;
+                display: flex;
+                background: #F5F5F5;
+                border: 1px solid #77777733;
+                border-radius: 4px;
+                margin-bottom: 12px;
+
+
+                &[name="text"] {
+                    height: 150px;
+                    display: flex;
+                    align-items: start;
+                    text-align: start;
+                    justify-content: start;
+                    &::placeholder {
+                        align-self: flex-start;
+                        text-align: start;
+                        justify-self: start;
+                     }
+                }
+                &[type="checkbox"] {
+                    position: relative;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &::before {
+                        content: '';
+                        width: 21px;
+                        height: 21px;
+                        border: 1px solid #ABA9A4;
+                        background: #fff;
+                        position: absolute;
+                    }
+                    &:checked::before {
+                        content: '';
+                        width: 21px;
+                        height: 21px;
+                        border: 1px solid #ABA9A4;
+                        background: #1B2A78;
+                        position: absolute;
+                    }
+                    &:checked::after {
+                        content: '+';
+                        color: white;
+                        width: 21px;
+                        height: 21px;
+                        position: absolute;
+                        font-size: 21px;
+                        text-align: center;
+                        align-items: center;
+                        left: 1px;
+                        top: 6px;
+                    }
+                }
+            }
+            button {
+                background: #ECB42E;
+                border: 1px solid #ECB42E;
+                width: max-content;
+                padding: 6px 12px;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 21px;
+                border-radius: 4px;
+                transition: 300ms ease;
+
+                    &:hover {
+                        background: #f5c149;
+                        border: 1px solid #f5c149;
+                        cursor: pointer;
+                        transform: translateY(-2px);
+                    }
+            }
+        }
+        .image {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
