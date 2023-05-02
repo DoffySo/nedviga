@@ -9,7 +9,6 @@
 }
 .container--holder {
   height: 100%;
-  width: 1200px;
   display: flex;
   margin: 0 auto;
   max-width: 1200px;
@@ -351,11 +350,9 @@
   display: flex;
   margin: 0 auto;
   max-width: 1200px;
-  width: 1200px;
   flex-direction: column;
   height: -moz-max-content;
   height: max-content;
-  max-height: 800px;
 }
 .whywe-container h1 {
   color: #317AB5;
@@ -371,9 +368,9 @@
   justify-content: center;
 }
 .whywe-container .items .item {
-  width: calc(33.3333333333% - 80px);
+  max-width: calc(33.3333333333vw - 0.01px);
   text-align: center;
-  margin: 20px 40px;
+  margin: 10px 20px;
 }
 .whywe-container .items .item .body {
   color: #1B2A78;
@@ -393,7 +390,6 @@
   display: flex;
 }
 .form-container {
-  width: 1200px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;

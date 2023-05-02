@@ -18,8 +18,6 @@ li, ul, a {
     list-style: none;
 }
 
-html, body, .wrapper {
-    height: 100vh;
-    width: 100vw;
+.wrapper {
     overflow-x: hidden;
 }
