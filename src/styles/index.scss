@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
+.pending {
+    border: 2px solid #bdbdbd!important;
+}
+.sended {
+    border: 2px solid rgb(65, 211, 65)!important;
+}
+.failed {
+    border: 2px solid rgb(211, 65, 65)!important;
+}
+
 .container {
     height: 840px;
     min-height: 50vh;
@@ -512,6 +523,22 @@
                 width: 100%;
                 height: 100%;
             }
+        }
+    }
+}
+
+
+.image {
+    width: 100%;
+    display: flex;
+    max-height: 800px;
+    img {
+        height: 800px;
+        width: 100%;
+        &.error {
+            display: flex;
+            margin: 0 auto;
+            width: 50%;
         }
     }
 }

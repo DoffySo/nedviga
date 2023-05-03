@@ -24,6 +24,8 @@
                 document.querySelector('.rentDiv').classList.add('selected')
             })
         </script>
+        <script src="src/scripts/jquery-3.6.4.min.js"></script>
+        <script src="src/scripts/mailSender.js"></script>
         </div>
     </body>
 </html>

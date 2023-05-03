@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<section class="buy">
+<div class="buy">
     <div class="container">
         <div class="head">
             <div class="buyDiv selected">
@@ -63,7 +63,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <div class="info">
     <div class="info-container">
@@ -150,16 +150,16 @@
 
 <div class="form">
     <div class="form-container">
-        <form action="">
-            <input type="text"  placeholder="Имя *" name="name">
-            <input type="tel"   placeholder="Телефон *" name="phone">
-            <input type="email" placeholder="Почта *" name="email">
-            <input type="text"  placeholder="Сообщение" name="text">
+        <form>
+            <input type="text" id="name"  placeholder="Имя *" name="name">
+            <input type="tel"  id="tel" placeholder="Телефон *" name="phone" class="trrw">
+            <input type="email"id="email" placeholder="Почта *" name="email">
+            <input type="text" id="text" placeholder="Сообщение" name="text">
             <div>
-                <input type="checkbox" name="licence" id="licence">
+                <input type="checkbox" name="licence" id="licence" class="acceptLicense">
                 <label for="licence">Я даю согласие на обработку персональных данных в соответствии с Политикой Конфиденциальности</label>
             </div>
-            <button type="submit">Отправить</button>
+            <button class="sendmail" type="submit">Отправить</button>
         </form>
         <div class="image">
             <img src="src/images/form.png" alt="">
