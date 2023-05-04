@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 .pending {
     border: 2px solid #bdbdbd!important;
 }
@@ -17,6 +15,8 @@
     max-height: 840px;
     background: rgb(255, 119, 119);
     align-items: center;
+    background: url("../images/header-bg.png") no-repeat;
+    background-size: cover;
     &--holder {
         height: 100%;
         display: flex;
@@ -26,8 +26,9 @@
 
         .t {
             color: white;
+            padding: 30px;
             .head, .body {
-                margin-bottom: 10px;
+                margin-bottom: 24px;
             }
             .body {
                 span {
@@ -36,7 +37,7 @@
             }
             .foot {
                 h4 {
-                    margin-bottom: 10px;
+                    margin-bottom: 40px;
                 }
                 button {
                     background: #ECB42E;
@@ -62,12 +63,17 @@
 }
 
 .buy {
-    margin: 80px 0;
+    padding: 80px 0;
     width: 100%;
+    background: url("../images/background-reverse.png") no-repeat;
+    background-size: cover;
+    background-position: right 50%;
     .container {
         background: none;
         max-width: 1200px;
         margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
         min-height: 100px;
         max-height: 300px;
         .head {
@@ -120,16 +126,16 @@
         }
         .bottom {
             min-width: 200px;
-            width: 60;
             height: 100px;
+
             .fromBuyDiv {
                 background: #383965;
                 height: 100%;
                 width: 100%;
+                display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 0 10px;
-                display: flex;
+                padding: 20px 10px;
                 color: white;
                 border-radius: 0 4px 4px 4px;
                 .complex {
@@ -146,11 +152,9 @@
                     .selection {
                         display: flex;
                         flex-direction: row;
-                        text-align: center;
                         align-items: center;
                         width: 250px;
                         flex-wrap: wrap;
-                        align-items: center;
                         justify-content: start;
                         text-align: start;
                         font-size: 14px;
@@ -214,9 +218,8 @@
         width: 100%;
         display: flex;
         margin: 0 auto;
-        height: 800px;
-        max-height: 800px;
-        justify-content: space-evenly;
+        min-height: 600px;
+        justify-content: space-between;
 
         .text {
             max-width: 600px;
@@ -237,9 +240,9 @@
         }
         .image {
             width: 50%;
-            max-width: 600px;
-            position: relative;
-            height: 800px;
+            img {
+                max-height: 600px;
+            }
         }
     }
 }
@@ -249,7 +252,9 @@
     height: 800px;
     max-height: 800px;
     z-index: 20;
-
+    background: url("../images/europe-bg.png") no-repeat;
+    background-position: right;
+    background-size: contain;
     &-container {
         width: 100%;
         max-width: 1200px;
@@ -264,6 +269,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: start;
+            margin-left: 10px;
             &-investors, &-life {
                 width: 70%;
                 display: flex;
@@ -354,7 +360,7 @@
                 position: absolute;
                 transform: translate(-50%, -50%);
                 width: 210px;
-                left: 70%;
+                left: 85%;
                 top: 25%;
                 color: #3C3D6D;
                 font-size: 21px;
@@ -370,6 +376,11 @@
 
 .whywe {
     width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background: url("../images/background-reverse.png") no-repeat;
+    background-size: contain;
+    background-position: right;
     &-container {
         display: flex;
         margin: 0 auto;
@@ -392,7 +403,9 @@
                 max-width: calc(100vw / 3 - 0.01px);
                 text-align: center;
                 margin: 10px 20px;
-
+                .head {
+                   svg{  width: 46px;height: 46px;}
+                }
                 .body {
                     color: #1B2A78;
                     font-size: 24px;
@@ -413,6 +426,9 @@
 .form {
     width: 100%;
     display: flex;
+    background: url("../images/background.png") no-repeat;
+    background-size: contain;
+    background-position: left 100%;
     &-container {
         max-width: 1200px;
         margin: 0 auto;
@@ -542,3 +558,95 @@
         }
     }
 }
+
+.view {
+    max-width: 1200px;
+    margin: 0 auto;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        .left {
+            display: flex;
+            flex-direction: column;
+            .title {
+                font-size: 48px;
+            }
+            .viewappart {
+                font-size: 24px;
+                span {
+                    color: #777777;
+                }
+            }
+            .buttons {
+                .buttons-button {
+                    width: 300px;
+                    height: 50px;
+                    background-color: #ECB42E;
+                    color: white;
+                    border-radius: 4px;
+                    border: none;
+                    margin-top: 10px;
+                    &.outline {
+                        border: 2px solid #ECB42E;
+                        background-color: white;
+                        color: #ECB42E;
+
+                    }
+                }
+            }
+            .view-info {
+                color:#3C3D6D;
+                display: flex;
+                flex-direction: column;
+                .phone,.worktime {
+                    margin-top: 25px;
+                }
+            }
+            .description {
+                margin: 30px 0;
+                width: 50%;
+            }
+        }
+        .right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                color:#337AB7;
+                font-size: 24px;
+                margin: 30px 0;
+            }
+            .view-parametrs {
+                margin-top: 20px;
+                display: flex;
+                justify-content: flex-start;
+                &-item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100px;
+                    height: 80px;
+                    box-shadow: 2px 2px 15px 0px #0000001A;
+                    text-align: center;
+                    margin: 10px auto;
+                }
+            }
+            ul {
+                li {
+                    list-style-type: disc;
+                    margin-top: 20px;
+                }
+            }
+            .form-container  {
+              &.view {
+                  justify-content: center;
+                  form {
+                      width: 100%;
+                  }
+              }
+            }
+        }
+    }
+}
+

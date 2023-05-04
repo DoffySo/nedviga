@@ -3,7 +3,7 @@
         &-container {
             justify-content: space-between;
             .text {
-                margin-left: 0;
+                margin-left: 24px;
                 width: 50%;
                 display: flex;
                 h1 {
@@ -15,37 +15,19 @@
                     font-size: 16px;
                 }
             }
-            .image {
-                width: 40%;
-            }
         }
     }
-    .infotwo {
-        &-container {
-            .left {
-                width: 100%;
-                &-investors, &-life {
-                    width: 50%;
-                    display: flex;
-                    margin: 0 auto;  
 
-                    span {
-                        font-size: 21px;
-                    }
-                }
-            }
-            .right {
-                display: none;
-            }
-        }
-    }
     .whywe {
         &-container {
             max-width: 100%;
             .items {
-                justify-content: start;
+                justify-content: center;
                 .item {
                     justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 30px;
                     .body {
                         justify-content: center;
                         width: 100%;
@@ -72,6 +54,11 @@
         &-container {
             padding: 5px 5px;
             transition: 300ms ease;
+            flex-direction: column-reverse;
+            .image {
+                width: 100%;
+                margin-bottom: 30px;
+            }
             form {
                 width: 100%;
 
@@ -79,26 +66,26 @@
                     margin: 0 auto;
                 }
             }
-            .image {
-                display: none;
-            }
         }
     }
     .info {
         &-container {
+            flex-direction: column;
             .text {
+                width: 90%;
+                text-align: left;
+            }
+        .image {
+            width: 100vw;
+            img {
                 width: 100%;
-                margin: 0 auto;
-                transition: all 300ms ease-in-out;
+                height: 50%;
+                max-height: 600px;
             }
-            .image {
-                display: none;
-            }
+        }
         }
     }
     .header {
-        background: green;
-
         &--container {
             .top {
                 .phoneMenu {
@@ -122,27 +109,125 @@
             }
         }
     }
+    .infotwo {
+        &-container {
+
+            .left {
+                width: 70%;
+                &-investors, &-life {
+                    h1 {
+                        font-size: 21px;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .right {
+                width: 30%;
+                height: 500px;
+                margin-right: 25px;
+                flex-direction: column;
+                .rent, .investition, .text {
+                    position: relative;
+                    width: 150px;
+                    height: 120px;
+                    transform: translate(0,0);
+                    left: 0;
+                }
+                .rent::after {
+                    width: 100%;
+                    text-align: center;
+                }
+                .rent::before {
+                    font-size: 46px;
+                }
+                .investition::after {
+                    width: 100%;
+                    left: 0;
+                    text-align: center;
+                }
+                .investition::before {
+                    font-size: 46px;
+                }
+                .text {
+                    text-align:right;
+                    display: block;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+    .footer {
+        &-container {
+            width: 100vw;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-height: auto;
+            height: max-content;
+            .start {
+                height: 400px;
+            }
+            .start, .center, .end {
+                display: flex;
+                flex-wrap: wrap;
+                h4 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 12px;
+                }
+                max-width: 350px;
+                flex-wrap: wrap;
+                .items {
+                    .item {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 594px) {
-    .header {
-        background: blue;
+    body {
+        overflow-x: hidden;
+    }
+    .whywe {
+        &-container {
+            .items {
+                .item {
+                    max-width: 80vw;
+                }
+            }
+        }
+    }
 
+    .t {
+        text-align: right;
+    }
+    .header {
         &--container {
             .top {
                 .phoneMenu {
                     display: flex;
                 }
+
                 .end {
                     .links {
                         display: none;
                     }
+
                     .phone {
                         display: none;
                     }
+
                     .lang {
                         display: none;
                     }
+
                     .burger-menu {
                         display: flex;
                         align-items: center;
@@ -150,6 +235,67 @@
                         justify-content: center;
                     }
                 }
+            }
+        }
+    }
+    .buy {
+        .container {
+            .bottom {
+                min-height: 300px;
+                .fromBuyDiv {
+                    flex-direction: column;
+
+                    .complex {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: left;
+                        width: 100%;
+                        height: 50px;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+                        #e {
+                            width: 80%;
+                            max-width: 250px;
+                            margin-left: 20px;
+                        }
+                    }
+
+                    .kvartira {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: left;
+                        width: 100%;
+                        min-height: 50px;
+                        .selection {
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                            div {
+                                margin-bottom: 20px;
+                                width: 100%;
+                                margin-left: 60px;
+                            }
+                        }
+                    }
+                }
+                .search {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        &-container {
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            height: 800px!important;
+            max-height: 800px!important;
+            .start, .center, .end {
+                height: max-content;
+                width: max-content;
             }
         }
     }

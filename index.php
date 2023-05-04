@@ -1,4 +1,5 @@
 <?php include './src/components/TheHeader.php'; ?>
+
 <div class="container">
     <div class="container--holder">
         <div class="t">
@@ -6,7 +7,7 @@
                 <h1>Недвижимость за рубежом</h1>
             </div>
             <div class="body">
-                <h2>Для инвестиций, жизни и отдыха</h2> 
+                <h2>Для инвестиций, жизни и отдыха</h2>
                 <h2>Гарантированный доход <span>6-12%</span> в год</h2>
                 <h2>Объекты лучших застройщиков</h2>
             </div>
@@ -23,37 +24,38 @@
         <div class="head">
             <div class="buyDiv selected">
                 <input type="radio" name="buyrent" class="tt" id="buy">
-                <label for="buy">Покупка</span>
+                <label for="buy">Покупка</label>
             </div>
             <div class="rentDiv">
                 <input type="radio" name="buyrent" class="tt" id="rent">
-                <label for="rent">Аренда</span>
+                <label for="rent">Аренда</label>
             </div>
         </div>
         <div class="bottom">
             <div class="fromBuyDiv">
                 <div class="complex">
-                    <span>Комплекс</span>
+                    <label>Комплекс</label>
                     <select name="e" id="e"></select>
                 </div>
                 <div class="kvartira">
-                    <span>Квартира</span>
+                    <label>Квартира</label>
                     <div class="selection">
                         <div>
                             <input type="checkbox" name="studio" id="studio">
                             <label for="studio">Студия</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="two" id="two">
-                            <label for="two">2 Спальни</label>
-                        </div>
-                        <div>
                             <input type="checkbox" name="one" id="one">
                             <label for="one">1 Спальня</label>
                         </div>
                         <div>
+                            <input type="checkbox" name="two" id="two">
+                            <label for="two">2 Спальни</label>
+                        </div>
+
+                        <div>
                             <input type="checkbox" name="three" id="three">
-                            <label for="three">3 Спальни</label>    
+                            <label for="three">3 Спальни</label>
                         </div>
                     </div>
                 </div>
@@ -82,7 +84,7 @@
             </span>
         </div>
         <div class="image">
-            <img src="src/images/info.png" height="800px" alt="">
+            <img src="src/images/info.png" alt="">
         </div>
     </div>
 </div>
@@ -119,31 +121,31 @@
     <div class="whywe-container">
         <h1>Почему мы?</h1>
         <div class="items">
-        <div class="item">
-                <div class="head"></div>
+            <div class="item">
+                <div class="head"><?php include './src/icons/percentageIcon.php'; ?></div>
                 <div class="body">Беспроцентная рассрочка</div>
                 <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
             </div>
-        <div class="item">
-            <div class="head"></div>
-            <div class="body">Беспроцентная рассрочка</div>
-            <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
-        </div>
-        <div class="item">
-            <div class="head"></div>
-            <div class="body">Беспроцентная рассрочка</div>
-            <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
-        </div>
-        <div class="item">
-            <div class="head"></div>
-            <div class="body">Беспроцентная рассрочка</div>
-            <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
-        </div>
-        <div class="item">
-            <div class="head"></div>
-            <div class="body">Беспроцентная рассрочка</div>
-            <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
-        </div>
+            <div class="item">
+                <div class="head"><?php include './src/icons/iconShield.php'; ?></div>
+                <div class="body">Официальный представитель Fort Noks</div>
+                <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
+            </div>
+            <div class="item">
+                <div class="head"><?php include './src/icons/handshakeIcon.php'; ?></div>
+                <div class="body">Выгодные условия сделки</div>
+                <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
+            </div>
+            <div class="item">
+                <div class="head"><?php include './src/icons/handshakeIcon.php'; ?></div>
+                <div class="body">Выгодные условия сделки</div>
+                <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
+            </div>
+            <div class="item">
+                <div class="head"><?php include './src/icons/handshakeIcon.php'; ?></div>
+                <div class="body">Выгодные условия сделки</div>
+                <div class="foot">Наш банк предлагает беспроцентную рассрочку всем покупателям</div>
+            </div>
         </div>
     </div>
 </div>
@@ -166,5 +168,5 @@
         </div>
     </div>
 </div>
-
+<script src="/src/scripts/burgerMenu.js"></script>
 <?php include './src/components/TheFooter.php'; ?>

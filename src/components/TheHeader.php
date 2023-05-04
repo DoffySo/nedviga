@@ -15,6 +15,7 @@ $header = "FortNoks Club";
     <link rel="stylesheet" href="src/styles/index.css">
     <link rel="stylesheet" href="src/styles/media.css">
     <link rel="stylesheet" href="src/styles/default.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
     <title><?= $header ?></title>
 </head>
